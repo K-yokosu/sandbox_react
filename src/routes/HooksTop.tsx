@@ -1,0 +1,23 @@
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+
+const HooksTop = () => {
+    return(
+        <>
+            <div>hooks top</div>
+            <nav>
+                <ul>
+                    <li><Link to={'callback'}>useCallback</Link></li>
+                    <li>useEffect</li>
+                    <li>useRef</li>
+                    <li>useLayoutEffect</li>
+                    <li>use...</li>
+                </ul>
+            </nav>
+            <Outlet />
+
+        </>
+    )
+}
+
+export default HooksTop

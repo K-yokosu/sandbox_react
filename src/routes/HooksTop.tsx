@@ -8,6 +8,7 @@ const HooksTop = () => {
             <nav>
                 <ul>
                     <li><Link to={'callback'}>useCallback</Link></li>
+                    <li><Link to={'memo'}>useMemo</Link></li>
                     <li>useEffect</li>
                     <li>useRef</li>
                     <li>useLayoutEffect</li>

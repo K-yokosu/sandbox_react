@@ -11,6 +11,7 @@ import ErrorPage from "./error-page";
 import Contact from "./routes/contact";
 import HooksTop from './routes/HooksTop';
 import Callback from './routes/Callback';
+import Memo from './routes/Memo ';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "callback",
         element: <Callback />
+      },
+      {
+        path: "memo",
+        element: <Memo />
       }
     ]
   }

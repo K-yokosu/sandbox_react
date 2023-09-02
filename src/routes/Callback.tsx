@@ -6,7 +6,10 @@ import React, {
 } from "react";
 
 // ① toggleが切り替わるたびにレンダリングが走り、関係ないChildコンポーネントも再レンダリングされる。
-// ②計算量の高いコンポーネントと仮定して useCallbackを使用し、再レンダリングを回避する
+// ② 再レンダリングを回避する
+// ③ memo&useCallbackで再レンダリングをスキップできるが、
+//    useCallbackは毎回関数を作成しているし、依存配列に変更がないか確認している。
+//    これらを計測するのは難しいけど、最適化自体にも時間的コストがかかっていることを念頭におく必要がある。
 
 const Callback = () => {
   const [count, setCount] = useState(0);

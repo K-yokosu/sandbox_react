@@ -13,6 +13,7 @@ import HooksTop from './routes/HooksTop';
 import Callback from './routes/Callback';
 import Memo from './routes/Memo ';
 import LayoutEffect from './routes/LayoutEffect';
+import Ref from './routes/Ref';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "layout_effect",
         element: <LayoutEffect />
+      },
+      {
+        path: "ref",
+        element: <Ref />
       },
     ]
   }

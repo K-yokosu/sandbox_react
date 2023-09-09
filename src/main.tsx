@@ -12,6 +12,7 @@ import Contact from "./routes/contact";
 import HooksTop from './routes/HooksTop';
 import Callback from './routes/Callback';
 import Memo from './routes/Memo ';
+import LayoutEffect from './routes/LayoutEffect';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
       {
         path: "memo",
         element: <Memo />
-      }
+      },
+      {
+        path: "layout_effect",
+        element: <LayoutEffect />
+      },
     ]
   }
 ]);
